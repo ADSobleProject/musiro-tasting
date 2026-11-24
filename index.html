@@ -73,6 +73,27 @@ h2.tt{font-size:clamp(26px,6.4vw,40px);margin-bottom:14px}
 .quote mark{background:linear-gradient(transparent 62%,var(--yellow) 62%);color:inherit}
 
 /* why */
+.nums{background:var(--dark);color:#fff}
+.nums .tt{color:#fff}
+.nchart{margin-top:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px 18px 18px}
+.nc-hd{font-size:15px;opacity:.85}.nc-hd b{color:#fff}.nc-hd small{opacity:.6;font-size:12px}
+.nbars{display:flex;align-items:flex-end;gap:10px;height:220px;margin-top:14px;border-bottom:1px solid rgba(255,255,255,.25)}
+.nb{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;position:relative}
+.nb i{display:block;width:100%;max-width:56px;height:var(--h);background:var(--green);border-radius:6px 6px 0 0;transform-origin:bottom;transform:scaleY(0);transition:transform 1s cubic-bezier(.2,.7,.2,1) calc(var(--i)*.1s + .2s)}
+.nb.pk i{background:var(--yellow)}
+.nchart.in .nb i{transform:scaleY(1)}
+.nv{font-size:clamp(10px,2.8vw,13px);font-weight:700;opacity:.8;margin-bottom:6px;white-space:nowrap}
+.nb.pk .nv{color:var(--yellow);opacity:1}
+.nm{position:absolute;bottom:-24px;font-size:13px;opacity:.7}
+.nc-ft{margin-top:34px;font-weight:700;font-size:15px}
+.nstats{display:grid;gap:12px;margin-top:14px}
+.ns{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px}
+.ns span{display:block;font-size:13px;color:var(--yellow);font-weight:700}
+.ns b{display:block;font-family:Paperlogy,sans-serif;font-weight:800;font-size:clamp(20px,5.4vw,24px);line-height:1.3;margin:6px 0}
+.ns small{font-size:13px;opacity:.65}
+.nnote{margin-top:16px;font-size:12px;opacity:.55;line-height:1.55}
+@media(min-width:760px){.nstats{grid-template-columns:1fr 1fr}.nbars{height:260px;gap:22px}}
+@media (prefers-reduced-motion:reduce){.nb i{transform:none;transition:none}}
 .why{background:var(--sand)}
 .why-list{display:grid;gap:14px;margin-top:30px}
 .why-item{background:#fff;border-radius:18px;padding:22px 22px 22px 76px;position:relative;border:1px solid var(--line)}
@@ -226,6 +247,24 @@ footer .copy{margin-top:12px;color:rgba(255,255,255,.35)}
       <p class="quote rv d2">설명보다 <mark>한 그릇</mark>이<br>더 많은 것을 말해 줍니다.</p>
       <p class="lead rv d3">무시로감자탕은 무청 시래기와 본사 자체 공장에서 만든 원재료로 맛을 지킵니다. 창업을 고민 중이라면 매장의 맛, 주방, 운영을 직접 보고 결정하세요.</p>
     </div>
+  </div>
+</section>
+
+<!-- 2-1. NUMBERS -->
+<section class="nums">
+  <div class="wrap">
+    <span class="eyebrow rv" style="color:var(--yellow)">NUMBERS</span>
+    <h2 class="tt rv d1">맛은 현장에서,<br>매출은 숫자로 먼저</h2>
+    <div class="nchart rv d2" role="img" aria-label="무시로 A점 월 매출: 5월 9,662만원, 6월 9,878만원, 7월 1억 855만원, 8월 1억 1,125만원, 9월 1억 232만원">
+      <p class="nc-hd"><b>무시로 A점</b> 월 매출</p>
+      <div class="nbars"><div class="nb" style="--h:80.5%;--i:0"><span class="nv">9,662만</span><i></i><span class="nm">5월</span></div><div class="nb" style="--h:82.3%;--i:1"><span class="nv">9,878만</span><i></i><span class="nm">6월</span></div><div class="nb" style="--h:90.5%;--i:2"><span class="nv">1억 855만</span><i></i><span class="nm">7월</span></div><div class="nb pk" style="--h:92.7%;--i:3"><span class="nv">1억 1,125만</span><i></i><span class="nm">8월</span></div><div class="nb" style="--h:85.3%;--i:4"><span class="nv">1억 232만</span><i></i><span class="nm">9월</span></div></div>
+      <p class="nc-ft">5개월 연속 월 매출 9,600만원 이상</p>
+    </div>
+    <div class="nstats">
+      <div class="ns rv"><span>무시로 B지점 · 오픈 후</span><b>3개월 만에<br>월 매출 1억</b><small>2024.3 오픈월 5,357만원 → 2024.6 1억 232만원</small></div>
+      <div class="ns rv d1"><span>무시로 A지점 · 주거 상권</span><b>임대료 250만원<br>월 최고 1억 1,795만원</b><small>임대료 부담이 낮은 상권에서 만든 매출</small></div>
+    </div>
+    <p class="nnote rv">※ 무시로감자탕 공식 홈페이지에 공개된 일부 가맹점의 실적입니다. 매출은 입지·규모·운영 방식에 따라 달라지며 향후 매출을 보장하지 않습니다. 가맹점 평균 매출 등은 정보공개서에서 확인하실 수 있습니다.</p>
   </div>
 </section>
 
